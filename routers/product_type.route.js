@@ -7,6 +7,9 @@ router
     .route("/")
     .post(ProductType.createProductType)
     .get(ProductType.getAllProductType);
-router.route("/:id").get(ProductType.getProductType);
+router
+    .route("/:id")
+    .get(ProductType.getProductType)
+    .put(ProductType.updateProductType);
 
 export default router;
